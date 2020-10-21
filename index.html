@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>TODO</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<style>
+	 body{
+	 text-align: center;
+	height: 100%;
+    background-color: #111;
+    box-sizing: border-box;
+	 }
+	 .title{
+	 	font-size: 25px;
+	 	font-weight: bold;
+	 	color: red;
+	 	text-align: center;
+	 }
+	 .input{
+	 	/*height: 40px;*/
+	padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 25px;
+    width: 250px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+	 }
+	 .add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.26rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+.add-1{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 28px;
+    width: 99px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.26rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 28px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.26rem;
+    font-size: 15px;
+    font-weight: bold;	
+	 }
+	 #list{
+	 	color: white;
+	 	font-size: 30px;
+	 	font-weight: bold;
+	 	list-style: none;
+	 	margin-right: 35px;
+	 	/*margin-left: 35px;*/
+	 }
+</style>
+<body>
+<div class="title">
+	<h2>TODO APPLICATION</h2>
+</div>
+
+<div>
+
+<input placeholder="Enter ToDo" type="text" id="todo-item" class="input">
+<button class="add" onclick="addtodo()">ADD ITEM</button>
+<button class="add-1" onclick="deleteAll()">DELETE ALL</button>
+</div>
+
+<div>
+	<ul id="list"></ul>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
